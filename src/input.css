@@ -21,6 +21,35 @@ body {
     align-items: center;
 }
 
+@keyframes little-bounce {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(-5%, 5%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes little-ping {
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes little-spin {
+    0% {
+        
+    }
+}
+
 .titulo {
     font-family: NewSunPlayFul;
 }
@@ -28,4 +57,8 @@ body {
 .bg-start{
     background-image: url("./imgs/backgrounds/bg-start.svg");
     background-size: cover;
+}
+
+.title-effect {
+    top: -50%;
 }
