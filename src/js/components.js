@@ -12,5 +12,32 @@ const components = {
             <img src="./imgs/start/start-button.svg" alt="" class="hover:cursor-pointer animate-pulse w-max">
             <img src="./imgs/start/start-button-line.svg" alt="" class="absolute">
          </main>
+    `,
+    quiz: /*html*/`
+        <main class="w-full h-full bg-large flex sm:justify-center items-center flex-col caveat-font p-10 gap-20 sm:gap-40">
+            <h1 class="sm:text-7xl text-5xl sm:w-4/6">Quando você se depara com uma situação nova e desafiadora, qual é a sua reação inicial?</h1>
+            <ul class="text-4xl sm:text-5xl flex flex-col gap-5">
+                <li class="flex justify-center gap-5">
+                    <input type="radio" name="options" id="" class="w-7">
+                    <label>Fico empolgado e ansioso para explorar todas as possibilidades.</label>
+                </li>
+                <li class="flex justify-center gap-5">
+                    <input type="radio" name="options" id="" class="w-7">
+                    <label>Fico empolgado e ansioso para explorar todas as possibilidades.</label>
+                </li>
+                <li class="flex justify-center gap-5">
+                    <input type="radio" name="options" id="" class="w-7">
+                    <label>Fico empolgado e ansioso para explorar todas as possibilidades.</label>
+                </li>
+                <li class="flex justify-center gap-5">
+                    <input type="radio" name="options" id="" class="w-7">
+                    <label>Fico empolgado e ansioso para explorar todas as possibilidades.</label>
+                </li>
+            </ul>
+            <div class="flex gap-20">
+                <button class="text-5xl"><-</button>
+                <button class="text-5xl">-></button>
+            </div>
+        </main>
     `
 }

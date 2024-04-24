@@ -64,13 +64,11 @@ body {
 .bg-start{
     background-image: url("./imgs/backgrounds/bg-start.svg");
     background-size: cover;
-    background-position: right;
 }
 
 .bg-large{
     background-image: url("./imgs/backgrounds/bg-large.svg");
     background-size: cover;
-    background-position: right;
 }
 
 .title-effect {
