@@ -8,16 +8,11 @@
 }
 
 body {
-    height: 100vh;
     width: 100vw;
 
     background-size: cover;
     font-family: Caveat;
     font-weight: 600;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 @keyframes little-bounce {
@@ -68,7 +63,8 @@ body {
 
 .bg-large{
     background-image: url("./imgs/backgrounds/bg-large.svg");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: repeat;
 }
 
 .title-effect {
@@ -94,4 +90,3 @@ body {
   .text-10xl {
     font-size: 8rem; /* 6.75rem * 1.19 ≈ 8rem */
   }
-  

@@ -554,6 +554,10 @@ video {
   --tw-contain-style:  ;
 }
 
+.static {
+  position: static;
+}
+
 .absolute {
   position: absolute;
 }
@@ -570,12 +574,45 @@ video {
   display: flex;
 }
 
+.h-4\/6 {
+  height: 66.666667%;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
 .h-full {
   height: 100%;
 }
 
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-5\/6 {
+  height: 83.333333%;
+}
+
+.w-2\/12 {
+  width: 16.666667%;
+}
+
 .w-3\/12 {
   width: 25%;
+}
+
+.w-4\/12 {
+  width: 33.333333%;
+}
+
+.w-4\/6 {
+  width: 66.666667%;
 }
 
 .w-5\/12 {
@@ -590,6 +627,10 @@ video {
   width: 1.75rem;
 }
 
+.w-7\/12 {
+  width: 58.333333%;
+}
+
 .w-full {
   width: 100%;
 }
@@ -597,14 +638,6 @@ video {
 .w-max {
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-5\/6 {
-  width: 83.333333%;
-}
-
-.w-4\/6 {
-  width: 66.666667%;
 }
 
 .animate-little-bounce {
@@ -645,16 +678,45 @@ video {
   gap: 5rem;
 }
 
-.gap-40 {
-  gap: 10rem;
-}
-
 .gap-5 {
   gap: 1.25rem;
 }
 
-.p-3 {
-  padding: 0.75rem;
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .p-10 {
@@ -671,18 +733,13 @@ video {
   line-height: 1;
 }
 
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
-}
-
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
 }
 
-.text-8xl {
-  font-size: 6rem;
+.text-7xl {
+  font-size: 4.5rem;
   line-height: 1;
 }
 
@@ -703,14 +760,10 @@ video {
 }
 
 body {
-  height: 100vh;
   width: 100vw;
   background-size: cover;
   font-family: Caveat;
   font-weight: 600;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 @keyframes little-bounce {
@@ -758,13 +811,12 @@ body {
 .bg-start{
   background-image: url("./imgs/backgrounds/bg-start.svg");
   background-size: cover;
-  background-position: right;
 }
 
 .bg-large{
   background-image: url("./imgs/backgrounds/bg-large.svg");
-  background-size: cover;
-  background-position: right;
+  background-size: contain;
+  background-repeat: repeat;
 }
 
 .title-effect {
@@ -813,26 +865,25 @@ body {
     width: 66.666667%;
   }
 
-  .sm\:items-center {
-    align-items: center;
-  }
-
   .sm\:justify-center {
     justify-content: center;
+  }
+
+  .sm\:gap-10 {
+    gap: 2.5rem;
   }
 
   .sm\:gap-40 {
     gap: 10rem;
   }
 
-  .sm\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
-  }
-
   .sm\:text-5xl {
     font-size: 3rem;
     line-height: 1;
   }
+
+  .sm\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
 }
-  
