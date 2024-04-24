@@ -3,11 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: NewSunPlayFul; /* Nome que você quer dar à sua fonte */
-    src: url('./fonts/newsun.eot'); /* Para navegadores IE9 e mais antigos */
-    src: url('./fonts/newsun.eot?#iefix') format('embedded-opentype'), /* Correção para o IE */
-         url('./fonts/newsun.ttf') format('truetype'); /* Para outros navegadores */
-    /* Adicione outras variações de fonte aqui, se disponíveis */
+    font-family: Caveat;
+    src: url('./fonts/Caveat-VariableFont_wght.ttf');
 }
 
 body {
@@ -15,6 +12,8 @@ body {
     width: 100vw;
 
     background-size: cover;
+    font-family: Caveat;
+    font-weight: 600;
 
     display: flex;
     justify-content: center;
@@ -46,7 +45,15 @@ body {
 
 @keyframes little-spin {
     0% {
-        
+        transform: rotate(0)
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    0% {
+        transform: rotate(0);
     }
 }
 
@@ -57,8 +64,36 @@ body {
 .bg-start{
     background-image: url("./imgs/backgrounds/bg-start.svg");
     background-size: cover;
+    background-position: right;
+}
+
+.bg-large{
+    background-image: url("./imgs/backgrounds/bg-large.svg");
+    background-size: cover;
+    background-position: right;
 }
 
 .title-effect {
     top: -50%;
 }
+
+.text-6xl {
+    font-size: 3.75rem; /* 3rem * 1.25 = 3.75rem */
+  }
+  
+  .text-7xl {
+    font-size: 4.5rem; /* 3.75rem * 1.2 = 4.5rem */
+  }
+  
+  .text-8xl {
+    font-size: 5.5rem; /* 4.5rem * 1.22 ≈ 5.5rem */
+  }
+  
+  .text-9xl {
+    font-size: 6.75rem; /* 5.5rem * 1.22 ≈ 6.75rem */
+  }
+  
+  .text-10xl {
+    font-size: 8rem; /* 6.75rem * 1.19 ≈ 8rem */
+  }
+  

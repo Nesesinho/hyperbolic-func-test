@@ -1,9 +1,16 @@
 const components = {
     start: /*html*/`
-        <section class="bg-violet-600 w-2/6 h-5/6 rounded shadow-lg shadow-black p-5 flex items-center flex-col">
-            <h1 class="text-3xl">Qual função Hiperbolica você é?</h1>
-            <p>Descubra qual dos 8 tipos de funções hiperbolicas você é!!</p>
-            <button class="m-auto text-2xl bg-white w-60 h-20 rounded shadow-md shadow-black">Iniciar Teste</button>
-        </section>
+        <main class="w-full h-full bg-start flex justify-center items-center flex-col gap-20">
+        <div class="sm:w-2/4  w-full relative">
+            <img src="./imgs/start/titulo-effect.svg" alt="" class="absolute w-3/12 title-effect">
+            <img src="./imgs/start/titulo-effect2.svg" alt="" class="absolute w-3/12 title-effect right-0 animate-little-bounce">
+            <img src="./imgs/start/titulo.svg" alt="">
+        </div>
+        <div class="sm:w-2/12 w-6/12 relative">
+            <img src="./imgs/start/start-button-effect.svg" alt="" class="absolute w-6/12 animate-little-spin" style="top: -30%; left: -40%;">
+            <img src="./imgs/start/start-button-effect2.svg" alt="" class="absolute w-5/12 animate-little-ping" style="right: -40%;">
+            <img src="./imgs/start/start-button.svg" alt="" class="hover:cursor-pointer animate-pulse w-max">
+            <img src="./imgs/start/start-button-line.svg" alt="" class="absolute">
+         </main>
     `
 }
