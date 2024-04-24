@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: NewSunPlayFul; /* Nome que você quer dar à sua fonte */
+    src: url('./fonts/newsun.eot'); /* Para navegadores IE9 e mais antigos */
+    src: url('./fonts/newsun.eot?#iefix') format('embedded-opentype'), /* Correção para o IE */
+         url('./fonts/newsun.ttf') format('truetype'); /* Para outros navegadores */
+    /* Adicione outras variações de fonte aqui, se disponíveis */
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    font-family: NewSunPlayFul;
+}
+
+.bg-start{
+    background-image: url("./imgs/backgrounds/bg-start.svg");
+    background-size: cover;
+}
