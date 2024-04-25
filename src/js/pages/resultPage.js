@@ -36,6 +36,10 @@ export default {
             </main>
         `
     },
+
+    loadResult(resultObj) {
+
+    },
     
     init() {}
 }

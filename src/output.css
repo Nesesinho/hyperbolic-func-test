@@ -600,21 +600,16 @@ video {
   height: 66.666667%;
 }
 
+.h-5\/6 {
+  height: 83.333333%;
+}
+
 .h-dvh {
   height: 100dvh;
 }
 
 .h-full {
   height: 100%;
-}
-
-.h-5\/6 {
-  height: 83.333333%;
-}
-
-.h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
 }
 
 .max-h-60 {
@@ -688,28 +683,12 @@ video {
   flex-direction: column;
 }
 
-.items-start {
-  align-items: flex-start;
-}
-
 .items-center {
   align-items: center;
 }
 
-.justify-start {
-  justify-content: flex-start;
-}
-
 .justify-center {
   justify-content: center;
-}
-
-.justify-between {
-  justify-content: space-between;
-}
-
-.justify-around {
-  justify-content: space-around;
 }
 
 .gap-10 {
@@ -722,14 +701,6 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
-}
-
-.gap-3 {
-  gap: 0.75rem;
 }
 
 .overflow-auto {
@@ -751,10 +722,6 @@ video {
 
 .bg-contain {
   background-size: contain;
-}
-
-.bg-cover {
-  background-size: cover;
 }
 
 .p-10 {
@@ -889,10 +856,6 @@ body {
 }
 
 @media (min-width: 640px) {
-  .sm\:h-dvh {
-    height: 100dvh;
-  }
-
   .sm\:w-2\/12 {
     width: 16.666667%;
   }
@@ -905,72 +868,28 @@ body {
     width: 66.666667%;
   }
 
-  .sm\:flex-row {
-    flex-direction: row;
-  }
-
-  .sm\:justify-center {
-    justify-content: center;
-  }
-
   .sm\:justify-around {
     justify-content: space-around;
-  }
-
-  .sm\:gap-40 {
-    gap: 10rem;
-  }
-
-  .sm\:bg-cover {
-    background-size: cover;
-  }
-
-  .sm\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .sm\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
-  }
-
-  .sm\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
-  .sm\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .sm\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .sm\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
+
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 768px) {
-  .md\:h-dvh {
-    height: 100dvh;
-  }
-
   .md\:w-2\/12 {
     width: 16.666667%;
   }
 
   .md\:gap-12 {
     gap: 3rem;
-  }
-
-  .md\:bg-cover {
-    background-size: cover;
   }
 
   .md\:text-5xl {
@@ -1004,5 +923,25 @@ body {
 
   .lg\:bg-cover {
     background-size: cover;
+  }
+
+  .lg\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .lg\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
