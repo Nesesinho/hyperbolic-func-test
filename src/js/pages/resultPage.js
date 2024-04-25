@@ -1,8 +1,9 @@
+import { funcs } from "../data/funcs.js";
+
 export default {
     html() {
         return /*html*/`
             <main class="w-full h-full bg-large bg-contain flex items-center flex-col caveat-font p-4 gap-10 md:gap-12 overflow-y-scroll">
-                
             </main>
         `
     },
@@ -17,7 +18,7 @@ export default {
             <img src="${resultObj.imgUrl}" alt="" class="md:w-2/12 w-8/12">
             <p class="md:text-5xl text-xl w-4/6">${resultObj.desc}</p>
             <h3 class="md:text-6xl text-3xl">Personagens ${resultObj.name}</h3>
-            <ul class="w-4/6 lg:h-72 flex gap-10 flex-col lg:flex-wrap my-10" id="charList">
+            <ul class="w-4/6 lg:h-72 flex flex-col lg:flex-wrap my-10" id="charList">
             </ul>
         `
 
@@ -34,5 +35,7 @@ export default {
         });
     },
     
-    init() {}
+    init() {
+        this.loadResult(funcs[0]);
+    }
 }
