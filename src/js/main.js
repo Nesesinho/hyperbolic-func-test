@@ -1,4 +1,4 @@
 import { pages } from "./pages/PagesController.js";
 
-document.body.innerHTML += pages.contents.result.html();
-pages.contents.result.init();
+document.body.innerHTML += pages.contents.quiz.html();
+pages.contents.quiz.init();

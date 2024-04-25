@@ -1,170 +1,171 @@
 export const questions = [
     {
-        question: "Quando você se depara com uma situação nova e desafiadora, qual é a sua reação inicial?",
+        question: "Quando confrontado com uma nova situação, você geralmente:",
         answers: [
             {
                 option: "a",
-                response: "Fico empolgado e ansioso para explorar todas as possibilidades."
+                response: "Fico animado com as possibilidades e oportunidades que ela pode trazer."
             },
             {
                 option: "b",
-                response: "Analiso cuidadosamente a situação e considero as opções mais estáveis."
+                response: "Avalio calmamente os prós e contras antes de tomar qualquer ação."
             },
             {
                 option: "c",
-                response: "Reflito sobre os detalhes e nuances antes de tomar uma decisão."
+                response: "Analiso cuidadosamente todos os detalhes antes de formar uma opinião."
             },
             {
                 option: "d",
-                response: "Sinto uma vontade irresistível de mergulhar de cabeça na experiência."
+                response: "Me sinto inclinado a agir imediatamente, sem muita reflexão."
             }
         ]
     },
     {
-        question: "Como você lida com mudanças inesperadas em sua rotina?",
+        question: "Como você se sente em relação a mudanças inesperadas em sua rotina?",
         answers: [
             {
                 option: "a",
-                response: "Encaro as mudanças como oportunidades emocionantes para crescer."
+                response: "Eu as encaro como aventuras emocionantes a serem exploradas."
             },
             {
                 option: "b",
-                response: "Procuro manter a calma e encontrar maneiras de adaptar-me rapidamente."
+                response: "Prefiro manter as coisas estáveis e previsíveis sempre que possível."
             },
             {
                 option: "c",
-                response: "Analiso os motivos por trás das mudanças e como elas afetam meu dia a dia."
+                response: "Gosto de entender as razões por trás das mudanças antes de me adaptar a elas."
             },
             {
                 option: "d",
-                response: "Abraço as mudanças de forma impulsiva e vejo onde me levam."
+                response: "Vejo-as como oportunidades para experimentar algo novo e diferente."
             }
         ]
     },
     {
-        question: "Quando confrontado com um problema complexo, qual é a sua abordagem inicial?",
+        question: "Quando confrontado com um problema complexo, você tende a:",
         answers: [
             {
                 option: "a",
-                response: "Busco soluções criativas e inovadoras para resolver o problema."
+                response: "Gerar várias ideias e abordagens diferentes para resolvê-lo."
             },
             {
                 option: "b",
-                response: "Considero cuidadosamente os prós e contras de diferentes abordagens."
+                response: "Procurar soluções práticas e realistas."
             },
             {
                 option: "c",
-                response: "Desmonto o problema em partes menores para entender melhor sua natureza."
+                response: "Analisar minuciosamente cada aspecto do problema antes de tomar uma decisão."
             },
             {
                 option: "d",
-                response: "Tomo medidas imediatas para lidar com o problema, mesmo que isso signifique correr riscos."
+                response: "Agir rapidamente e experimentar diferentes soluções até encontrar uma que funcione."
             }
         ]
     },
     {
-        question: "Como você se comporta em situações sociais e de grupo?",
+        question: "Como você se sente em relação a liderar um grupo de pessoas?",
         answers: [
             {
                 option: "a",
-                response: "Sou carismático e persuasivo, capaz de atrair os outros para meu ponto de vista."
+                response: "Eu gosto de inspirar os outros e liderar com entusiasmo."
             },
             {
                 option: "b",
-                response: "Prefiro manter a paz e a harmonia, evitando conflitos sempre que possível."
+                response: "Prefiro contribuir de forma estável para o sucesso do grupo, sem necessariamente assumir o papel de líder."
             },
             {
                 option: "c",
-                response: "Foco em alcançar meus objetivos de forma prática e determinada."
+                response: "Gosto de liderar através da análise cuidadosa e da compreensão profunda dos problemas."
             },
             {
                 option: "d",
-                response: "Sou flexível e adaptável, capaz de me ajustar a diferentes dinâmicas de grupo."
+                response: "Sinto-me confortável liderando de maneira espontânea e adaptável, sem seguir estritamente um plano predefinido."
             }
         ]
     },
     {
-        question: "Qual destas palavras melhor descreve sua abordagem em relação ao planejamento?",
+        question: "Qual destas palavras melhor descreve sua abordagem em relação ao desconhecido?",
         answers: [
             {
                 option: "a",
-                response: "Empolgado"
+                response: "Entusiasmado."
             },
             {
                 option: "b",
-                response: "Estável"
+                response: "Estável."
             },
             {
                 option: "c",
-                response: "Reflexivo"
+                response: "Reflexivo."
             },
             {
                 option: "d",
-                response: "Impulsivo"
+                response: "Espontâneo."
             }
         ]
     },
     {
-        question: "Como você reage a desafios pessoais ou profissionais?",
+        question: "Quando se trata de tomar decisões importantes, você tende a confiar mais em:",
         answers: [
             {
                 option: "a",
-                response: "Vejo-os como oportunidades para crescimento e desenvolvimento pessoal."
+                response: "Sua intuição e imaginação."
             },
             {
                 option: "b",
-                response: "Procuro soluções práticas e eficazes para superar os desafios."
+                response: "Sua lógica e raciocínio."
             },
             {
                 option: "c",
-                response: "Reflito sobre as causas subjacentes dos desafios e como posso aprender com eles."
+                response: "Sua análise cuidadosa dos fatos."
             },
             {
                 option: "d",
-                response: "Aceito os desafios de forma impulsiva, buscando novas experiências e soluções."
+                response: "Sua capacidade de se adaptar rapidamente às circunstâncias."
             }
         ]
     },
     {
-        question: "Quando confrontado com opiniões diferentes das suas, qual é sua reação inicial?",
+        question: "Como você lida com conflitos ou situações tensas em um grupo?",
         answers: [
             {
                 option: "a",
-                response: "Tento persuadir os outros a ver as coisas do meu ponto de vista."
+                response: "Tento manter o clima leve e positivo, buscando soluções que beneficiem a todos."
             },
             {
                 option: "b",
-                response: "Busco um terreno comum e tento encontrar uma solução que agrade a todos."
+                response: "Prefiro abordar os problemas de maneira prática e direta, focando nas soluções."
             },
             {
                 option: "c",
-                response: "Analiso as diferentes perspectivas e considero como elas podem enriquecer minha compreensão."
+                response: "Analiso cuidadosamente as diferentes perspectivas e busco uma compreensão mais profunda do problema."
             },
             {
                 option: "d",
-                response: "Defendo minha opinião de forma determinada e prática."
+                response: "Tento resolver o conflito de forma rápida e decisiva, sem muita deliberação."
             }
         ]
     },
     {
-        question: "Como você lida com situações de conflito ou tensão?",
+        question: "Qual dessas características você mais valoriza em si mesmo?",
         answers: [
             {
                 option: "a",
-                response: "Procuro resolver os conflitos de forma diplomática e harmoniosa."
+                response: "Entusiasmo e paixão."
             },
             {
                 option: "b",
-                response: "Foco em alcançar meus objetivos, mesmo que isso signifique enfrentar confrontos."
+                response: "Estabilidade e consistência."
             },
             {
                 option: "c",
-                response: "Analiso as raízes do conflito e busco soluções que abordem suas causas subjacentes."
+                response: "Profundidade e análise."
             },
             {
                 option: "d",
-                response: "Resolvo os conflitos de forma impulsiva, buscando uma rápida resolução."
+                response: "Espontaneidade e adaptabilidade."
             }
         ]
     }
-];
+]
+

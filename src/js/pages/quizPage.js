@@ -1,4 +1,6 @@
+import { funcs } from "../data/funcs.js";
 import { questions } from "../data/questions.js";
+import { pages } from "./PagesController.js";
 
 export default {
     data: {
@@ -45,7 +47,6 @@ export default {
             radio.addEventListener("change", () => {
                 this.data.answers[this.data.question] = el.option
                 this.checkBtn();
-                console.log(this.data.answers)
             })
 
             li.appendChild(radio);
@@ -55,6 +56,50 @@ export default {
         }
     },
     
+    calcResult() {
+        let contagem = {};
+        let maxFrequencia = 0;
+
+        // Contagem de frequência de cada letra
+        this.data.answers.forEach(letra => {
+            contagem[letra] = (contagem[letra] || 0) + 1;
+            maxFrequencia = Math.max(maxFrequencia, contagem[letra]);
+        });
+
+        // Encontrando as letras com a frequência máxima
+        let maisFrequentes = [];
+        for (let letra in contagem) {
+            if (contagem[letra] === maxFrequencia) {
+                maisFrequentes.push(letra);
+            }
+        }
+
+        const alvo = maisFrequentes[1] ? maisFrequentes[0] + maisFrequentes[1] : maisFrequentes[0];
+        let arrayLetras = ["a", "b", "c", "d", "ab", "ad", "bc", "cd"];
+
+        let indice = -1;
+
+        for (let i = 0; i < arrayLetras.length; i++) {
+            // Verifica se todas as letras em 'alvo' estão presentes em 'arrayLetras[i]'
+            if (alvo.split('').every(letra => arrayLetras[i].includes(letra))) {
+                indice = i;
+                break;
+            }
+        }
+
+        // Se o conjunto de letras não foi encontrado, retorna o índice da primeira letra
+        if (indice === -1) {
+            for (let i = 0; i < arrayLetras.length; i++) {
+                if (alvo[0].includes(arrayLetras[i])) {
+                    indice = i;
+                    break;
+                }
+            }
+        }
+
+        return indice
+    },
+
     checkBtn() {
         if (this.data.answers.length > this.data.question) {
             document.getElementById("next").classList.remove("hidden");
@@ -63,7 +108,6 @@ export default {
         }
 
         if (this.data.question !== 0) {
-            console.log("back")
             document.getElementById("back").classList.remove("hidden");
         } else {
             document.getElementById("back").classList.add("hidden");
@@ -85,7 +129,13 @@ export default {
 
         nextBtn.addEventListener("click", e => {
             this.data.question++
-            this.loadQuestion(questions[this.data.question])
+            if (this.data.answers.length === questions.length) {
+                document.body.innerHTML = pages.contents.result.html();
+                pages.contents.result.init(this.calcResult());
+                return
+            } else {
+                this.loadQuestion(questions[this.data.question])
+            }
         })
 
         backBtn.addEventListener("click", e => {

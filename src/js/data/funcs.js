@@ -3,7 +3,7 @@ export const funcs = [
         name: "Tangente Hiperbólica",
         type: "Idealista Empolgado",
         imgUrl: "./imgs/funcs/tang.svg",
-        points: 14,
+        points: "a",
         characters: [
             {
               name: "Bob Esponja",
@@ -27,7 +27,7 @@ export const funcs = [
         name: "Cosseno Hiperbólico",
         type: "Realista Estável",
         imgUrl: "./imgs/funcs/cos.svg",
-        points: 21,
+        points: "b",
         characters: [
             {
               name: "Hermione Granger",
@@ -51,7 +51,7 @@ export const funcs = [
         name: "Secante Hiperbólica",
         type: "Analítico Reflexivo",
         imgUrl: "./imgs/funcs/sec.svg",
-        points: 28,
+        points: "c",
         characters: [
             {
               name: "Sherlock Holmes",
@@ -75,7 +75,7 @@ export const funcs = [
         name: "Cosecante Hiperbólica",
         type: "Aventuroso Impulsivo",
         imgUrl: "./imgs/funcs/cossec.svg",
-        points: 35,
+        points: "d",
         characters: [
             {
               name: "Jack Sparrow",
@@ -99,7 +99,7 @@ export const funcs = [
         name: "Seno Hiperbólico",
         type: "Ponderado Adaptável",
         imgUrl: "./imgs/funcs/sen.svg",
-        points: 42,
+        points: "ab",
         characters: [
             {
               name: "Capitão América",
@@ -123,7 +123,7 @@ export const funcs = [
         name: "Tangente Inversa Hiperbólica",
         type: "Carismático Cativante",
         imgUrl: "./imgs/funcs/tanginv.svg",
-        points: 49,
+        points: "ad",
         characters: [
             {
               name: "Tony Stark",
@@ -147,7 +147,7 @@ export const funcs = [
         name: "Cosseno Inverso Hiperbólico",
         type: "Pragmático Determinado",
         imgUrl: "./imgs/funcs/cosinv.svg",
-        points: 56,
+        points: "bc",
         characters: [
             {
               name: "Walter White",
@@ -171,7 +171,7 @@ export const funcs = [
         name: "Secante Inversa Hiperbólica",
         type: "Harmonioso Conciliador",
         imgUrl: "./imgs/funcs/secinv.svg",
-        points: 64,
+        points: "cd",
         characters: [
             {
               name: "Gandalf",

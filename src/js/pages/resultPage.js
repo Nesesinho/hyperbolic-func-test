@@ -35,7 +35,8 @@ export default {
         });
     },
     
-    init() {
-        this.loadResult(funcs[0]);
+    init(index) {
+        console.log(index)
+        this.loadResult(funcs[index]);
     }
 }
