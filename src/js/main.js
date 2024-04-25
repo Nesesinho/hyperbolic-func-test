@@ -1,3 +1,4 @@
-import { components } from "./components.js";
+import { pages } from "./pages/PagesController.js";
 
-document.body.innerHTML += components.result
+document.body.innerHTML += pages.contents.quiz.html();
+pages.contents.quiz.init();
