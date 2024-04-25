@@ -2,6 +2,7 @@ export const funcs = [
     {
         name: "Tangente Hiperbólica",
         type: "Idealista Empolgado",
+        imgUrl: "./imgs/funcs/tang.svg",
         points: 14,
         characters: [
             {
@@ -25,6 +26,7 @@ export const funcs = [
     {
         name: "Cosseno Hiperbólico",
         type: "Realista Estável",
+        imgUrl: "./imgs/funcs/cos.svg",
         points: 21,
         characters: [
             {
@@ -48,6 +50,7 @@ export const funcs = [
     {
         name: "Secante Hiperbólica",
         type: "Analítico Reflexivo",
+        imgUrl: "./imgs/funcs/sec.svg",
         points: 28,
         characters: [
             {
@@ -71,6 +74,7 @@ export const funcs = [
     {
         name: "Cosecante Hiperbólica",
         type: "Aventuroso Impulsivo",
+        imgUrl: "./imgs/funcs/cossec.svg",
         points: 35,
         characters: [
             {
@@ -94,6 +98,7 @@ export const funcs = [
     {
         name: "Seno Hiperbólico",
         type: "Ponderado Adaptável",
+        imgUrl: "./imgs/funcs/sen.svg",
         points: 42,
         characters: [
             {
@@ -117,6 +122,7 @@ export const funcs = [
     {
         name: "Tangente Inversa Hiperbólica",
         type: "Carismático Cativante",
+        imgUrl: "./imgs/funcs/tanginv.svg",
         points: 49,
         characters: [
             {
@@ -140,6 +146,7 @@ export const funcs = [
     {
         name: "Cosseno Inverso Hiperbólico",
         type: "Pragmático Determinado",
+        imgUrl: "./imgs/funcs/cosinv.svg",
         points: 56,
         characters: [
             {
@@ -163,6 +170,7 @@ export const funcs = [
     {
         name: "Secante Inversa Hiperbólica",
         type: "Harmonioso Conciliador",
+        imgUrl: "./imgs/funcs/secinv.svg",
         points: 64,
         characters: [
             {

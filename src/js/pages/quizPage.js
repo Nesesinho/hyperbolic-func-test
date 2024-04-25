@@ -1,6 +1,6 @@
 import { questions } from "../data/questions.js";
 
-export default{
+export default {
     data: {
         answers: [],
         question: 0
@@ -8,10 +8,10 @@ export default{
 
     html() {
         return /*html*/`
-            <main class="w-full h-dvh bg-large lg:bg-cover bg-contain flex sm:justify-around items-center flex-col caveat-font p-10">
+            <main class="w-full h-dvh bg-large xl:bg-cover bg-contain flex sm:justify-around items-center flex-col caveat-font p-10">
                 <section class="flex flex-col items-center sm:w-4/6 h-5/6">
-                    <h1 class="sm:text-5xl lg:text-7xl text-3xl" id="question"></h1>
-                    <ul class="text-1xl sm:text-4xl lg:text-5xl flex flex-col gap-5 my-auto" id="answers">
+                    <h1 class="sm:text-5xl 2xl:text-7xl text-3xl" id="question"></h1>
+                    <ul class="text-1xl sm:text-4xl 2xl:text-5xl flex flex-col gap-5 my-auto" id="answers">
                     </ul>
                 </section>
                 <div class="flex gap-20" id="btns">
