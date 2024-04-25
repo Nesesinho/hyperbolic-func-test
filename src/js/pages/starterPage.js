@@ -1,3 +1,5 @@
+import { pages } from "./PagesController.js";
+
 export default {
     html() {
         return /*html*/`
@@ -18,7 +20,8 @@ export default {
     
     init() {
         document.getElementById("startBtn").addEventListener("click", e => {
-            console.log("oi")
+            document.body.innerHTML = pages.contents.quiz.html();
+            pages.contents.quiz.init();
         })
     }
 }

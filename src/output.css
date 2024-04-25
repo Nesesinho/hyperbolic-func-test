@@ -657,10 +657,6 @@ video {
   max-width: 15rem;
 }
 
-.max-w-32 {
-  max-width: 8rem;
-}
-
 .animate-little-bounce {
   animation: little-bounce 4s linear infinite;
 }
@@ -761,15 +757,41 @@ video {
   line-height: 1.75rem;
 }
 
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
-}
-
 @font-face {
   font-family: Caveat;
 
   src: url('./fonts/Caveat-VariableFont_wght.ttf');
+}
+
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 body {
@@ -929,61 +951,22 @@ body {
   .lg\:flex-wrap {
     flex-wrap: wrap;
   }
-
-  .lg\:bg-cover {
-    background-size: cover;
-  }
-
-  .lg\:text-8xl {
-    font-size: 6rem;
-    line-height: 1;
-  }
-
-  .lg\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
-  }
-
-  .lg\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .lg\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
 }
 
 @media (min-width: 1280px) {
   .xl\:bg-cover {
     background-size: cover;
   }
-
-  .xl\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
-  }
-
-  .xl\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .xl\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
 }
 
 @media (min-width: 1536px) {
-  .\32xl\:text-7xl {
-    font-size: 4.5rem;
+  .\32xl\:text-5xl {
+    font-size: 3rem;
     line-height: 1;
   }
 
-  .\32xl\:text-5xl {
-    font-size: 3rem;
+  .\32xl\:text-7xl {
+    font-size: 4.5rem;
     line-height: 1;
   }
 }
