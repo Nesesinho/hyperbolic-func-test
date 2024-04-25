@@ -8,6 +8,7 @@ export default {
                 <img src="./imgs/start/titulo-effect.svg" alt="" class="absolute w-3/12 title-effect">
                 <img src="./imgs/start/titulo-effect2.svg" alt="" class="absolute w-3/12 title-effect right-0 animate-little-bounce">
                 <img src="./imgs/start/titulo.svg" alt="">
+                <p>Por: Anthony Passos e Beatriz Calado</p>
             </div>
             <div class="sm:w-2/12 w-6/12 relative">
                 <img src="./imgs/start/start-button-effect.svg" alt="" class="absolute w-6/12 animate-little-spin" style="top: -30%; left: -40%;">
